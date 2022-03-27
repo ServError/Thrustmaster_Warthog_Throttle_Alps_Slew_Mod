@@ -6,7 +6,7 @@ This repository houses the Thrustmaster Warthog Throttle Alps Slew Mod, an open 
 
 ## Is this Delta Sim's mod?
 
-Nope, this was my 2022 mechcanical, electrical, and software engineering practice project. Though the [Instructable](https://www.instructables.com/Thrustmaster-Warthog-Slew-Sensor-I2C-Upgrade/) provided a good sanity check, I started from scratch and did my own logic analysis, etc.
+Nope, this was my 2022 mechanical, electrical, and software engineering practice project. Though the [Instructable](https://www.instructables.com/Thrustmaster-Warthog-Slew-Sensor-I2C-Upgrade/) provided a good sanity check, I started from scratch and did my own logic analysis, etc.
 
 ### Why does it look similar?
 
