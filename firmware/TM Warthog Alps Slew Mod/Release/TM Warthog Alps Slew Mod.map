@@ -1,0 +1,612 @@
+Archive member included to satisfy reference by file (symbol)
+
+d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+                              main.o (__do_clear_bss)
+d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+                              D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o (exit)
+d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o)
+                              d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o) (_Exit)
+d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+                              d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+command             0x1               main.o
+x_ready             0x1               main.o
+y_ready             0x1               main.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+ .bss           0x0000000000000000        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+ .text          0x0000000000000000        0x0 main.o
+ .data          0x0000000000000000        0x0 main.o
+ .bss           0x0000000000000000        0x0 main.o
+ .text.adc_sleep
+                0x0000000000000000        0x4 main.o
+ .text.adc_wake
+                0x0000000000000000        0x4 main.o
+ .text.adc_single_conversion
+                0x0000000000000000        0xa main.o
+ .bss.state     0x0000000000000000        0x1 main.o
+ .text          0x0000000000000000        0x0 timer1.o
+ .data          0x0000000000000000        0x0 timer1.o
+ .bss           0x0000000000000000        0x0 timer1.o
+ .text.timer1_stop
+                0x0000000000000000        0x4 timer1.o
+ .text.timer1_read_counter
+                0x0000000000000000        0x6 timer1.o
+ .text          0x0000000000000000        0x0 twi_slave.o
+ .data          0x0000000000000000        0x0 twi_slave.o
+ .bss           0x0000000000000000        0x0 twi_slave.o
+ .text.twi_bus_error_check
+                0x0000000000000000       0x28 twi_slave.o
+ .text          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+ .data          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+ .bss           0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+ .text          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o)
+ .data          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o)
+ .bss           0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o)
+ .text          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000001000 xr
+data             0x0000000000800100 0x0000000000000100 rw !x
+eeprom           0x0000000000810000 0x0000000000000100 rw !x
+fuse             0x0000000000820000 0x0000000000000003 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+LOAD main.o
+LOAD timer1.o
+LOAD twi_slave.o
+START GROUP
+LOAD d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libm.a
+END GROUP
+START GROUP
+LOAD d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a
+LOAD d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libm.a
+LOAD d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a
+LOAD D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const\libattiny441.a
+END GROUP
+                [0x0000000000000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000001000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x2000
+                [0x0000000000000100]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000100]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000       0x92
+ *(.vectors)
+ .vectors       0x0000000000000000       0x3c D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.dinit)
+ .dinit         0x000000000000003c        0x5 data_init
+                0x0000000000000042                . = ALIGN (0x2)
+ *fill*         0x0000000000000041        0x1 
+                0x0000000000000042                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000042        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000042                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+                0x0000000000000042                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000042                __ctors_start = .
+ *(.ctors)
+                0x0000000000000042                __ctors_end = .
+                0x0000000000000042                __dtors_start = .
+ *(.dtors)
+                0x0000000000000042                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000042        0x0 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+                0x0000000000000042                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000042        0xc D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000004e       0x3c d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_copy_data.o)
+                0x000000000000004e                __do_copy_data
+                0x000000000000007c                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000000000008a        0x4 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+ *(.init9)
+                0x000000000000008e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000008e        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+                0x000000000000008e                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000008e        0x4 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000092                _etext = .
+
+.data           0x0000000000800100        0x0 load address 0x0000000000000092
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.gnu.linkonce.d*)
+ *(.gnu.linkonce.r*)
+                0x0000000000800100                . = ALIGN (0x2)
+                0x0000000000800100                _edata = .
+                [!provide]                        PROVIDE (__data_end, .)
+
+.bss            0x0000000000800100        0x3
+                [!provide]                        PROVIDE (__bss_start, .)
+ *(COMMON)
+ COMMON         0x0000000000800100        0x3 main.o
+                0x0000000000800100                command
+                0x0000000000800101                x_ready
+                0x0000000000800102                y_ready
+                [!provide]                        PROVIDE (__bss_end, .)
+                0x0000000000000092                __data_load_start = LOADADDR (.data)
+                0x0000000000000092                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800103        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000800103                _end = .
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2f
+ *(.comment)
+ .comment       0x0000000000000000       0x2f main.o
+                                         0x30 (size before relaxing)
+ .comment       0x000000000000002f       0x30 timer1.o
+ .comment       0x000000000000002f       0x30 twi_slave.o
+ .comment       0x000000000000002f       0x30 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+ .comment       0x000000000000002f       0x30 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o)
+
+.stack.descriptors.hdr
+                0x0000000000000000        0xe
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/avr25/memx-const\libgcc.a(_exit.o)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x75c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x75c D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+
+.debug_abbrev   0x0000000000000000      0x6f6
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x6f6 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+
+.debug_line     0x0000000000000000      0x14f
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x14f D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x2a5
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x2a5 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(TM Warthog Alps Slew Mod.elf elf32-avr)
+LOAD linker stubs
+LOAD data_init
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+
+.text           0x0000000000000092        0x2
+ .text          0x0000000000000092        0x2 D:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.10.348/xc8/avr/lib/avr25/memx-const/crtattiny441.o
+                0x0000000000000092                __vector_22
+                0x0000000000000092                __vector_28
+                0x0000000000000092                __vector_1
+                0x0000000000000092                __vector_24
+                0x0000000000000092                __vector_12
+                0x0000000000000092                __bad_interrupt
+                0x0000000000000092                __vector_6
+                0x0000000000000092                __vector_3
+                0x0000000000000092                __vector_23
+                0x0000000000000092                __vector_25
+                0x0000000000000092                __vector_11
+                0x0000000000000092                __vector_13
+                0x0000000000000092                __vector_17
+                0x0000000000000092                __vector_19
+                0x0000000000000092                __vector_7
+                0x0000000000000092                __vector_27
+                0x0000000000000092                __vector_5
+                0x0000000000000092                __vector_4
+                0x0000000000000092                __vector_9
+                0x0000000000000092                __vector_2
+                0x0000000000000092                __vector_21
+                0x0000000000000092                __vector_15
+                0x0000000000000092                __vector_26
+                0x0000000000000092                __vector_14
+                0x0000000000000092                __vector_10
+                0x0000000000000092                __vector_16
+                0x0000000000000092                __vector_18
+                0x0000000000000092                __vector_20
+
+.text.adc_single_conversion.part.0
+                0x0000000000000094       0x2a
+ .text.adc_single_conversion.part.0
+                0x0000000000000094       0x2a main.o
+
+.text.adc_setup
+                0x00000000000000be       0x22
+ .text.adc_setup
+                0x00000000000000be       0x22 main.o
+                0x00000000000000be                adc_setup
+
+.text.twi_data_from_master
+                0x00000000000000e0        0xc
+ .text.twi_data_from_master
+                0x00000000000000e0        0xc main.o
+                0x00000000000000e0                twi_data_from_master
+
+.text.twi_data_to_master
+                0x00000000000000ec       0x3c
+ .text.twi_data_to_master
+                0x00000000000000ec       0x3c main.o
+                0x00000000000000ec                twi_data_to_master
+
+.text.twi_stop_callback
+                0x0000000000000128        0x8
+ .text.twi_stop_callback
+                0x0000000000000128        0x8 main.o
+                0x0000000000000128                twi_stop_callback
+
+.text.twi_address_callback
+                0x0000000000000130        0x8
+ .text.twi_address_callback
+                0x0000000000000130        0x8 main.o
+                0x0000000000000130                twi_address_callback
+
+.text.timer1_callback
+                0x0000000000000138        0x8
+ .text.timer1_callback
+                0x0000000000000138        0x8 main.o
+                0x0000000000000138                timer1_callback
+
+.text.startup.main
+                0x0000000000000140       0xcc
+ .text.startup.main
+                0x0000000000000140       0xcc main.o
+                0x0000000000000140                main
+
+.text.timer1_setup
+                0x000000000000020c        0x6
+ .text.timer1_setup
+                0x000000000000020c        0x6 timer1.o
+                0x000000000000020c                timer1_setup
+
+.text.timer1_set_4_5_usec
+                0x0000000000000212        0xc
+ .text.timer1_set_4_5_usec
+                0x0000000000000212        0xc timer1.o
+                0x0000000000000212                timer1_set_4_5_usec
+
+.text.timer1_start
+                0x000000000000021e        0x6
+ .text.timer1_start
+                0x000000000000021e        0x6 timer1.o
+                0x000000000000021e                timer1_start
+
+.text.__vector_8
+                0x0000000000000224       0x48
+ .text.__vector_8
+                0x0000000000000224       0x48 timer1.o
+                0x0000000000000224                __vector_8
+
+.text.twi_slave_initialise
+                0x000000000000026c       0x14
+ .text.twi_slave_initialise
+                0x000000000000026c       0x14 twi_slave.o
+                0x000000000000026c                twi_slave_initialise
+
+.text.__vector_29
+                0x0000000000000280       0xa6
+ .text.__vector_29
+                0x0000000000000280       0xa6 twi_slave.o
+                0x0000000000000280                __vector_29
+
+.text.__dummy_fini
+                0x0000000000000326        0x2
+ .text.__dummy_fini
+                0x0000000000000326        0x2 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+                0x0000000000000326                _fini
+
+.text.__dummy_funcs_on_exit
+                0x0000000000000328        0x2
+ .text.__dummy_funcs_on_exit
+                0x0000000000000328        0x2 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+                0x0000000000000328                __funcs_on_exit
+
+.text.__dummy_simulator_exit
+                0x000000000000032a        0x2
+ .text.__dummy_simulator_exit
+                0x000000000000032a        0x2 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+                0x000000000000032a                __simulator_exit
+
+.text.exit      0x000000000000032c        0xe
+ .text.exit     0x000000000000032c        0xe d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(exit.o)
+                0x000000000000032c                exit
+
+.text._Exit     0x000000000000033a        0x2
+ .text._Exit    0x000000000000033a        0x2 d:/program files/microchip/xc8/v2.35/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr25/memx-const\libc.a(_Exit.o)
+                0x000000000000033a                _Exit
+
+.bss.wake_source_timer1
+                0x0000000000800103        0x1
+ .bss.wake_source_timer1
+                0x0000000000800103        0x1 main.o
+                0x0000000000800103                wake_source_timer1
+
+.bss.sleep_when_idle
+                0x0000000000800104        0x1
+ .bss.sleep_when_idle
+                0x0000000000800104        0x1 main.o
+                0x0000000000800104                sleep_when_idle
+
+.bss.sleep_with_timer
+                0x0000000000800105        0x1
+ .bss.sleep_with_timer
+                0x0000000000800105        0x1 main.o
+                0x0000000000800105                sleep_with_timer

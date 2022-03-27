@@ -1,0 +1,534 @@
+
+TM Warthog Alps Slew Mod.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000003d0  2**0
+                  ALLOC, LOAD, DATA
+  1 .text         00000092  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800100  00800100  000003d0  2**0
+                  ALLOC
+  3 .comment      0000002f  00000000  00000000  000003d0  2**0
+                  CONTENTS, READONLY
+  4 .stack.descriptors.hdr 0000000e  00000000  00000000  000003ff  2**0
+                  CONTENTS, READONLY
+  5 .debug_info   0000075c  00000000  00000000  0000040d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000006f6  00000000  00000000  00000b69  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000014f  00000000  00000000  0000125f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000002a5  00000000  00000000  000013ae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .text         00000002  00000092  00000092  00000126  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 10 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00001654  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .text.adc_single_conversion.part.0 0000002a  00000094  00000094  00000128  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .text.adc_setup 00000022  000000be  000000be  00000152  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .text.twi_data_from_master 0000000c  000000e0  000000e0  00000174  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .text.twi_data_to_master 0000003c  000000ec  000000ec  00000180  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text.twi_stop_callback 00000008  00000128  00000128  000001bc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.twi_address_callback 00000008  00000130  00000130  000001c4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.timer1_callback 00000008  00000138  00000138  000001cc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.startup.main 000000cc  00000140  00000140  000001d4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .bss.wake_source_timer1 00000001  00800103  00800103  000003d0  2**0
+                  ALLOC
+ 20 .bss.sleep_when_idle 00000001  00800104  00800104  000003d0  2**0
+                  ALLOC
+ 21 .bss.sleep_with_timer 00000001  00800105  00800105  000003d0  2**0
+                  ALLOC
+ 22 .text.timer1_setup 00000006  0000020c  0000020c  000002a0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.timer1_set_4_5_usec 0000000c  00000212  00000212  000002a6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.timer1_start 00000006  0000021e  0000021e  000002b2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.__vector_8 00000048  00000224  00000224  000002b8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.twi_slave_initialise 00000014  0000026c  0000026c  00000300  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .text.__vector_29 000000a6  00000280  00000280  00000314  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .text.__dummy_fini 00000002  00000326  00000326  000003ba  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.__dummy_funcs_on_exit 00000002  00000328  00000328  000003bc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.__dummy_simulator_exit 00000002  0000032a  0000032a  000003be  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.exit    0000000e  0000032c  0000032c  000003c0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text._Exit   00000002  0000033a  0000033a  000003ce  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	20 c0       	rjmp	.+64     	; 0x42 <__ctors_end>
+   2:	47 c0       	rjmp	.+142    	; 0x92 <_etext>
+   4:	46 c0       	rjmp	.+140    	; 0x92 <_etext>
+   6:	45 c0       	rjmp	.+138    	; 0x92 <_etext>
+   8:	44 c0       	rjmp	.+136    	; 0x92 <_etext>
+   a:	43 c0       	rjmp	.+134    	; 0x92 <_etext>
+   c:	42 c0       	rjmp	.+132    	; 0x92 <_etext>
+   e:	41 c0       	rjmp	.+130    	; 0x92 <_etext>
+  10:	09 c1       	rjmp	.+530    	; 0x224 <__vector_8>
+  12:	3f c0       	rjmp	.+126    	; 0x92 <_etext>
+  14:	3e c0       	rjmp	.+124    	; 0x92 <_etext>
+  16:	3d c0       	rjmp	.+122    	; 0x92 <_etext>
+  18:	3c c0       	rjmp	.+120    	; 0x92 <_etext>
+  1a:	3b c0       	rjmp	.+118    	; 0x92 <_etext>
+  1c:	3a c0       	rjmp	.+116    	; 0x92 <_etext>
+  1e:	39 c0       	rjmp	.+114    	; 0x92 <_etext>
+  20:	38 c0       	rjmp	.+112    	; 0x92 <_etext>
+  22:	37 c0       	rjmp	.+110    	; 0x92 <_etext>
+  24:	36 c0       	rjmp	.+108    	; 0x92 <_etext>
+  26:	35 c0       	rjmp	.+106    	; 0x92 <_etext>
+  28:	34 c0       	rjmp	.+104    	; 0x92 <_etext>
+  2a:	33 c0       	rjmp	.+102    	; 0x92 <_etext>
+  2c:	32 c0       	rjmp	.+100    	; 0x92 <_etext>
+  2e:	31 c0       	rjmp	.+98     	; 0x92 <_etext>
+  30:	30 c0       	rjmp	.+96     	; 0x92 <_etext>
+  32:	2f c0       	rjmp	.+94     	; 0x92 <_etext>
+  34:	2e c0       	rjmp	.+92     	; 0x92 <_etext>
+  36:	2d c0       	rjmp	.+90     	; 0x92 <_etext>
+  38:	2c c0       	rjmp	.+88     	; 0x92 <_etext>
+  3a:	22 c1       	rjmp	.+580    	; 0x280 <__vector_29>
+
+0000003c <.dinit>:
+  3c:	01 00       	.word	0x0001	; ????
+  3e:	01 06       	cpc	r0, r17
+  40:	80 00       	.word	0x0080	; ????
+
+00000042 <__ctors_end>:
+  42:	11 24       	eor	r1, r1
+  44:	1f be       	out	0x3f, r1	; 63
+  46:	cf ef       	ldi	r28, 0xFF	; 255
+  48:	d1 e0       	ldi	r29, 0x01	; 1
+  4a:	de bf       	out	0x3e, r29	; 62
+  4c:	cd bf       	out	0x3d, r28	; 61
+
+0000004e <__do_copy_data>:
+  4e:	ec e3       	ldi	r30, 0x3C	; 60
+  50:	f0 e0       	ldi	r31, 0x00	; 0
+  52:	40 e0       	ldi	r20, 0x00	; 0
+  54:	17 c0       	rjmp	.+46     	; 0x84 <__do_clear_bss+0x8>
+  56:	b5 91       	lpm	r27, Z+
+  58:	a5 91       	lpm	r26, Z+
+  5a:	35 91       	lpm	r19, Z+
+  5c:	25 91       	lpm	r18, Z+
+  5e:	05 91       	lpm	r16, Z+
+  60:	07 fd       	sbrc	r16, 7
+  62:	0c c0       	rjmp	.+24     	; 0x7c <__do_clear_bss>
+  64:	95 91       	lpm	r25, Z+
+  66:	85 91       	lpm	r24, Z+
+  68:	ef 01       	movw	r28, r30
+  6a:	f9 2f       	mov	r31, r25
+  6c:	e8 2f       	mov	r30, r24
+  6e:	05 90       	lpm	r0, Z+
+  70:	0d 92       	st	X+, r0
+  72:	a2 17       	cp	r26, r18
+  74:	b3 07       	cpc	r27, r19
+  76:	d9 f7       	brne	.-10     	; 0x6e <__do_copy_data+0x20>
+  78:	fe 01       	movw	r30, r28
+  7a:	04 c0       	rjmp	.+8      	; 0x84 <__do_clear_bss+0x8>
+
+0000007c <__do_clear_bss>:
+  7c:	1d 92       	st	X+, r1
+  7e:	a2 17       	cp	r26, r18
+  80:	b3 07       	cpc	r27, r19
+  82:	e1 f7       	brne	.-8      	; 0x7c <__do_clear_bss>
+  84:	e1 34       	cpi	r30, 0x41	; 65
+  86:	f4 07       	cpc	r31, r20
+  88:	31 f7       	brne	.-52     	; 0x56 <__do_copy_data+0x8>
+  8a:	5a d0       	rcall	.+180    	; 0x140 <main>
+  8c:	4f c1       	rjmp	.+670    	; 0x32c <exit>
+
+0000008e <_exit>:
+  8e:	f8 94       	cli
+
+00000090 <__stop_program>:
+  90:	ff cf       	rjmp	.-2      	; 0x90 <__stop_program>
+
+Disassembly of section .text:
+
+00000092 <__bad_interrupt>:
+  92:	b6 cf       	rjmp	.-148    	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.adc_single_conversion.part.0:
+
+00000094 <adc_single_conversion.part.0>:
+  94:	99 b1       	in	r25, 0x09	; 9
+  96:	19 b8       	out	0x09, r1	; 9
+  98:	49 b1       	in	r20, 0x09	; 9
+  9a:	81 50       	subi	r24, 0x01	; 1
+  9c:	21 e0       	ldi	r18, 0x01	; 1
+  9e:	30 e0       	ldi	r19, 0x00	; 0
+  a0:	b9 01       	movw	r22, r18
+  a2:	02 c0       	rjmp	.+4      	; 0xa8 <adc_single_conversion.part.0+0x14>
+  a4:	66 0f       	add	r22, r22
+  a6:	77 1f       	adc	r23, r23
+  a8:	8a 95       	dec	r24
+  aa:	e2 f7       	brpl	.-8      	; 0xa4 <adc_single_conversion.part.0+0x10>
+  ac:	cb 01       	movw	r24, r22
+  ae:	84 2b       	or	r24, r20
+  b0:	89 b9       	out	0x09, r24	; 9
+  b2:	2e 9a       	sbi	0x05, 6	; 5
+  b4:	2e 99       	sbic	0x05, 6	; 5
+  b6:	fe cf       	rjmp	.-4      	; 0xb4 <adc_single_conversion.part.0+0x20>
+  b8:	86 b1       	in	r24, 0x06	; 6
+  ba:	97 b1       	in	r25, 0x07	; 7
+  bc:	08 95       	ret
+
+Disassembly of section .text.adc_setup:
+
+000000be <adc_setup>:
+  be:	8a b3       	in	r24, 0x1a	; 26
+  c0:	89 7f       	andi	r24, 0xF9	; 249
+  c2:	8a bb       	out	0x1a, r24	; 26
+  c4:	8b b3       	in	r24, 0x1b	; 27
+  c6:	89 7f       	andi	r24, 0xF9	; 249
+  c8:	8b bb       	out	0x1b, r24	; 27
+  ca:	48 9a       	sbi	0x09, 0	; 9
+  cc:	88 b1       	in	r24, 0x08	; 8
+  ce:	18 b8       	out	0x08, r1	; 8
+  d0:	2f 9a       	sbi	0x05, 7	; 5
+  d2:	2a 9a       	sbi	0x05, 2	; 5
+  d4:	e0 e6       	ldi	r30, 0x60	; 96
+  d6:	f0 e0       	ldi	r31, 0x00	; 0
+  d8:	80 81       	ld	r24, Z
+  da:	86 60       	ori	r24, 0x06	; 6
+  dc:	80 83       	st	Z, r24
+  de:	08 95       	ret
+
+Disassembly of section .text.twi_data_from_master:
+
+000000e0 <twi_data_from_master>:
+  e0:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+  e4:	81 e0       	ldi	r24, 0x01	; 1
+  e6:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <sleep_when_idle>
+  ea:	08 95       	ret
+
+Disassembly of section .text.twi_data_to_master:
+
+000000ec <twi_data_to_master>:
+  ec:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  f0:	80 31       	cpi	r24, 0x10	; 16
+  f2:	a1 f0       	breq	.+40     	; 0x11c <__DATA_REGION_LENGTH__+0x1c>
+  f4:	81 31       	cpi	r24, 0x11	; 17
+  f6:	61 f0       	breq	.+24     	; 0x110 <__DATA_REGION_LENGTH__+0x10>
+  f8:	8f 30       	cpi	r24, 0x0F	; 15
+  fa:	29 f0       	breq	.+10     	; 0x106 <__DATA_REGION_LENGTH__+0x6>
+  fc:	80 e0       	ldi	r24, 0x00	; 0
+  fe:	91 e0       	ldi	r25, 0x01	; 1
+ 100:	90 93 04 01 	sts	0x0104, r25	; 0x800104 <sleep_when_idle>
+ 104:	08 95       	ret
+ 106:	81 ef       	ldi	r24, 0xF1	; 241
+ 108:	91 e0       	ldi	r25, 0x01	; 1
+ 10a:	90 93 04 01 	sts	0x0104, r25	; 0x800104 <sleep_when_idle>
+ 10e:	08 95       	ret
+ 110:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <y_ready>
+ 114:	91 e0       	ldi	r25, 0x01	; 1
+ 116:	90 93 04 01 	sts	0x0104, r25	; 0x800104 <sleep_when_idle>
+ 11a:	08 95       	ret
+ 11c:	80 91 01 01 	lds	r24, 0x0101	; 0x800101 <x_ready>
+ 120:	91 e0       	ldi	r25, 0x01	; 1
+ 122:	90 93 04 01 	sts	0x0104, r25	; 0x800104 <sleep_when_idle>
+ 126:	08 95       	ret
+
+Disassembly of section .text.twi_stop_callback:
+
+00000128 <twi_stop_callback>:
+ 128:	81 e0       	ldi	r24, 0x01	; 1
+ 12a:	80 93 05 01 	sts	0x0105, r24	; 0x800105 <sleep_with_timer>
+ 12e:	08 95       	ret
+
+Disassembly of section .text.twi_address_callback:
+
+00000130 <twi_address_callback>:
+ 130:	81 e0       	ldi	r24, 0x01	; 1
+ 132:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <sleep_when_idle>
+ 136:	08 95       	ret
+
+Disassembly of section .text.timer1_callback:
+
+00000138 <timer1_callback>:
+ 138:	81 e0       	ldi	r24, 0x01	; 1
+ 13a:	80 93 03 01 	sts	0x0103, r24	; 0x800103 <_end>
+ 13e:	08 95       	ret
+
+Disassembly of section .text.startup.main:
+
+00000140 <main>:
+ 140:	88 ed       	ldi	r24, 0xD8	; 216
+ 142:	80 93 71 00 	sts	0x0071, r24	; 0x800071 <__TEXT_REGION_LENGTH__+0x7ff071>
+ 146:	10 92 73 00 	sts	0x0073, r1	; 0x800073 <__TEXT_REGION_LENGTH__+0x7ff073>
+ 14a:	15 be       	out	0x35, r1	; 53
+ 14c:	87 b3       	in	r24, 0x17	; 23
+ 14e:	88 7f       	andi	r24, 0xF8	; 248
+ 150:	87 bb       	out	0x17, r24	; 23
+ 152:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <__TEXT_REGION_LENGTH__+0x7ff062>
+ 156:	87 60       	ori	r24, 0x07	; 7
+ 158:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__TEXT_REGION_LENGTH__+0x7ff062>
+ 15c:	8a b3       	in	r24, 0x1a	; 26
+ 15e:	86 75       	andi	r24, 0x56	; 86
+ 160:	8a bb       	out	0x1a, r24	; 26
+ 162:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <__TEXT_REGION_LENGTH__+0x7ff063>
+ 166:	89 6a       	ori	r24, 0xA9	; 169
+ 168:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <__TEXT_REGION_LENGTH__+0x7ff063>
+ 16c:	8a e3       	ldi	r24, 0x3A	; 58
+ 16e:	80 93 70 00 	sts	0x0070, r24	; 0x800070 <__TEXT_REGION_LENGTH__+0x7ff070>
+ 172:	a5 df       	rcall	.-182    	; 0xbe <adc_setup>
+ 174:	8a b3       	in	r24, 0x1a	; 26
+ 176:	8f 7a       	andi	r24, 0xAF	; 175
+ 178:	8a bb       	out	0x1a, r24	; 26
+ 17a:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <__TEXT_REGION_LENGTH__+0x7ff063>
+ 17e:	8f 7a       	andi	r24, 0xAF	; 175
+ 180:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <__TEXT_REGION_LENGTH__+0x7ff063>
+ 184:	73 d0       	rcall	.+230    	; 0x26c <twi_slave_initialise>
+ 186:	42 d0       	rcall	.+132    	; 0x20c <timer1_setup>
+ 188:	78 94       	sei
+ 18a:	cf e7       	ldi	r28, 0x7F	; 127
+ 18c:	80 91 03 01 	lds	r24, 0x0103	; 0x800103 <_end>
+ 190:	81 30       	cpi	r24, 0x01	; 1
+ 192:	a9 f0       	breq	.+42     	; 0x1be <main+0x7e>
+ 194:	80 91 05 01 	lds	r24, 0x0105	; 0x800105 <sleep_with_timer>
+ 198:	81 30       	cpi	r24, 0x01	; 1
+ 19a:	99 f1       	breq	.+102    	; 0x202 <__stack+0x3>
+ 19c:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <sleep_when_idle>
+ 1a0:	81 30       	cpi	r24, 0x01	; 1
+ 1a2:	a1 f7       	brne	.-24     	; 0x18c <main+0x4c>
+ 1a4:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <sleep_when_idle>
+ 1a8:	85 b7       	in	r24, 0x35	; 53
+ 1aa:	80 62       	ori	r24, 0x20	; 32
+ 1ac:	85 bf       	out	0x35, r24	; 53
+ 1ae:	88 95       	sleep
+ 1b0:	85 b7       	in	r24, 0x35	; 53
+ 1b2:	8f 7d       	andi	r24, 0xDF	; 223
+ 1b4:	85 bf       	out	0x35, r24	; 53
+ 1b6:	80 91 03 01 	lds	r24, 0x0103	; 0x800103 <_end>
+ 1ba:	81 30       	cpi	r24, 0x01	; 1
+ 1bc:	59 f7       	brne	.-42     	; 0x194 <main+0x54>
+ 1be:	10 92 03 01 	sts	0x0103, r1	; 0x800103 <_end>
+ 1c2:	2f 9a       	sbi	0x05, 7	; 5
+ 1c4:	67 df       	rcall	.-306    	; 0x94 <adc_single_conversion.part.0>
+ 1c6:	8c 01       	movw	r16, r24
+ 1c8:	82 e0       	ldi	r24, 0x02	; 2
+ 1ca:	64 df       	rcall	.-312    	; 0x94 <adc_single_conversion.part.0>
+ 1cc:	16 95       	lsr	r17
+ 1ce:	07 95       	ror	r16
+ 1d0:	16 95       	lsr	r17
+ 1d2:	07 95       	ror	r16
+ 1d4:	2c 2f       	mov	r18, r28
+ 1d6:	20 1b       	sub	r18, r16
+ 1d8:	20 93 01 01 	sts	0x0101, r18	; 0x800101 <x_ready>
+ 1dc:	96 95       	lsr	r25
+ 1de:	87 95       	ror	r24
+ 1e0:	96 95       	lsr	r25
+ 1e2:	87 95       	ror	r24
+ 1e4:	80 58       	subi	r24, 0x80	; 128
+ 1e6:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <y_ready>
+ 1ea:	2f 98       	cbi	0x05, 7	; 5
+ 1ec:	85 b7       	in	r24, 0x35	; 53
+ 1ee:	80 62       	ori	r24, 0x20	; 32
+ 1f0:	85 bf       	out	0x35, r24	; 53
+ 1f2:	88 95       	sleep
+ 1f4:	85 b7       	in	r24, 0x35	; 53
+ 1f6:	8f 7d       	andi	r24, 0xDF	; 223
+ 1f8:	85 bf       	out	0x35, r24	; 53
+ 1fa:	80 91 05 01 	lds	r24, 0x0105	; 0x800105 <sleep_with_timer>
+ 1fe:	81 30       	cpi	r24, 0x01	; 1
+ 200:	69 f6       	brne	.-102    	; 0x19c <main+0x5c>
+ 202:	10 92 05 01 	sts	0x0105, r1	; 0x800105 <sleep_with_timer>
+ 206:	05 d0       	rcall	.+10     	; 0x212 <timer1_set_4_5_usec>
+ 208:	0a d0       	rcall	.+20     	; 0x21e <timer1_start>
+ 20a:	ce cf       	rjmp	.-100    	; 0x1a8 <main+0x68>
+
+Disassembly of section .text.timer1_setup:
+
+0000020c <timer1_setup>:
+ 20c:	81 e0       	ldi	r24, 0x01	; 1
+ 20e:	8f b9       	out	0x0f, r24	; 15
+ 210:	08 95       	ret
+
+Disassembly of section .text.timer1_set_4_5_usec:
+
+00000212 <timer1_set_4_5_usec>:
+ 212:	8b e6       	ldi	r24, 0x6B	; 107
+ 214:	9e ee       	ldi	r25, 0xEE	; 238
+ 216:	9d bd       	out	0x2d, r25	; 45
+ 218:	8c bd       	out	0x2c, r24	; 44
+ 21a:	81 e0       	ldi	r24, 0x01	; 1
+ 21c:	08 95       	ret
+
+Disassembly of section .text.timer1_start:
+
+0000021e <timer1_start>:
+ 21e:	82 e0       	ldi	r24, 0x02	; 2
+ 220:	8e bd       	out	0x2e, r24	; 46
+ 222:	08 95       	ret
+
+Disassembly of section .text.__vector_8:
+
+00000224 <__vector_8>:
+ 224:	1f 92       	push	r1
+ 226:	0f 92       	push	r0
+ 228:	0f b6       	in	r0, 0x3f	; 63
+ 22a:	0f 92       	push	r0
+ 22c:	11 24       	eor	r1, r1
+ 22e:	2f 93       	push	r18
+ 230:	3f 93       	push	r19
+ 232:	4f 93       	push	r20
+ 234:	5f 93       	push	r21
+ 236:	6f 93       	push	r22
+ 238:	7f 93       	push	r23
+ 23a:	8f 93       	push	r24
+ 23c:	9f 93       	push	r25
+ 23e:	af 93       	push	r26
+ 240:	bf 93       	push	r27
+ 242:	ef 93       	push	r30
+ 244:	ff 93       	push	r31
+ 246:	1e bc       	out	0x2e, r1	; 46
+ 248:	77 df       	rcall	.-274    	; 0x138 <timer1_callback>
+ 24a:	ff 91       	pop	r31
+ 24c:	ef 91       	pop	r30
+ 24e:	bf 91       	pop	r27
+ 250:	af 91       	pop	r26
+ 252:	9f 91       	pop	r25
+ 254:	8f 91       	pop	r24
+ 256:	7f 91       	pop	r23
+ 258:	6f 91       	pop	r22
+ 25a:	5f 91       	pop	r21
+ 25c:	4f 91       	pop	r20
+ 25e:	3f 91       	pop	r19
+ 260:	2f 91       	pop	r18
+ 262:	0f 90       	pop	r0
+ 264:	0f be       	out	0x3f, r0	; 63
+ 266:	0f 90       	pop	r0
+ 268:	1f 90       	pop	r1
+ 26a:	18 95       	reti
+
+Disassembly of section .text.twi_slave_initialise:
+
+0000026c <twi_slave_initialise>:
+ 26c:	82 e8       	ldi	r24, 0x82	; 130
+ 26e:	80 93 a2 00 	sts	0x00A2, r24	; 0x8000a2 <__TEXT_REGION_LENGTH__+0x7ff0a2>
+ 272:	8f ef       	ldi	r24, 0xFF	; 255
+ 274:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7ff0a0>
+ 278:	8c eb       	ldi	r24, 0xBC	; 188
+ 27a:	80 93 a5 00 	sts	0x00A5, r24	; 0x8000a5 <__TEXT_REGION_LENGTH__+0x7ff0a5>
+ 27e:	08 95       	ret
+
+Disassembly of section .text.__vector_29:
+
+00000280 <__vector_29>:
+ 280:	1f 92       	push	r1
+ 282:	0f 92       	push	r0
+ 284:	0f b6       	in	r0, 0x3f	; 63
+ 286:	0f 92       	push	r0
+ 288:	11 24       	eor	r1, r1
+ 28a:	2f 93       	push	r18
+ 28c:	3f 93       	push	r19
+ 28e:	4f 93       	push	r20
+ 290:	5f 93       	push	r21
+ 292:	6f 93       	push	r22
+ 294:	7f 93       	push	r23
+ 296:	8f 93       	push	r24
+ 298:	9f 93       	push	r25
+ 29a:	af 93       	push	r26
+ 29c:	bf 93       	push	r27
+ 29e:	ef 93       	push	r30
+ 2a0:	ff 93       	push	r31
+ 2a2:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 2a6:	87 fd       	sbrc	r24, 7
+ 2a8:	1f c0       	rjmp	.+62     	; 0x2e8 <__vector_29+0x68>
+ 2aa:	86 ff       	sbrs	r24, 6
+ 2ac:	0c c0       	rjmp	.+24     	; 0x2c6 <__vector_29+0x46>
+ 2ae:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 2b2:	83 fd       	sbrc	r24, 3
+ 2b4:	30 c0       	rjmp	.+96     	; 0x316 <__vector_29+0x96>
+ 2b6:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 2ba:	80 fd       	sbrc	r24, 0
+ 2bc:	27 c0       	rjmp	.+78     	; 0x30c <__vector_29+0x8c>
+ 2be:	82 e0       	ldi	r24, 0x02	; 2
+ 2c0:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+ 2c4:	31 df       	rcall	.-414    	; 0x128 <twi_stop_callback>
+ 2c6:	ff 91       	pop	r31
+ 2c8:	ef 91       	pop	r30
+ 2ca:	bf 91       	pop	r27
+ 2cc:	af 91       	pop	r26
+ 2ce:	9f 91       	pop	r25
+ 2d0:	8f 91       	pop	r24
+ 2d2:	7f 91       	pop	r23
+ 2d4:	6f 91       	pop	r22
+ 2d6:	5f 91       	pop	r21
+ 2d8:	4f 91       	pop	r20
+ 2da:	3f 91       	pop	r19
+ 2dc:	2f 91       	pop	r18
+ 2de:	0f 90       	pop	r0
+ 2e0:	0f be       	out	0x3f, r0	; 63
+ 2e2:	0f 90       	pop	r0
+ 2e4:	1f 90       	pop	r1
+ 2e6:	18 95       	reti
+ 2e8:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 2ec:	81 ff       	sbrs	r24, 1
+ 2ee:	07 c0       	rjmp	.+14     	; 0x2fe <__vector_29+0x7e>
+ 2f0:	fd de       	rcall	.-518    	; 0xec <twi_data_to_master>
+ 2f2:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7ff0a0>
+ 2f6:	83 e0       	ldi	r24, 0x03	; 3
+ 2f8:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+ 2fc:	e4 cf       	rjmp	.-56     	; 0x2c6 <__vector_29+0x46>
+ 2fe:	83 e0       	ldi	r24, 0x03	; 3
+ 300:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+ 304:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7ff0a0>
+ 308:	eb de       	rcall	.-554    	; 0xe0 <twi_data_from_master>
+ 30a:	dd cf       	rjmp	.-70     	; 0x2c6 <__vector_29+0x46>
+ 30c:	83 e0       	ldi	r24, 0x03	; 3
+ 30e:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+ 312:	0e df       	rcall	.-484    	; 0x130 <twi_address_callback>
+ 314:	d8 cf       	rjmp	.-80     	; 0x2c6 <__vector_29+0x46>
+ 316:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 31a:	80 93 a3 00 	sts	0x00A3, r24	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 31e:	82 e0       	ldi	r24, 0x02	; 2
+ 320:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+ 324:	d0 cf       	rjmp	.-96     	; 0x2c6 <__vector_29+0x46>
+
+Disassembly of section .text.__dummy_fini:
+
+00000326 <_fini>:
+ 326:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+00000328 <__funcs_on_exit>:
+ 328:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+0000032a <__simulator_exit>:
+ 32a:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+0000032c <exit>:
+ 32c:	ec 01       	movw	r28, r24
+ 32e:	fc df       	rcall	.-8      	; 0x328 <__funcs_on_exit>
+ 330:	fa df       	rcall	.-12     	; 0x326 <_fini>
+ 332:	ce 01       	movw	r24, r28
+ 334:	fa df       	rcall	.-12     	; 0x32a <__simulator_exit>
+ 336:	ce 01       	movw	r24, r28
+ 338:	00 d0       	rcall	.+0      	; 0x33a <_Exit>
+
+Disassembly of section .text._Exit:
+
+0000033a <_Exit>:
+ 33a:	a9 de       	rcall	.-686    	; 0x8e <_exit>

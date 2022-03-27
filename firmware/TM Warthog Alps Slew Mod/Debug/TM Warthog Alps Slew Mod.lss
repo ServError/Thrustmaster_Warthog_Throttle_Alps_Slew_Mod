@@ -1,0 +1,848 @@
+
+TM Warthog Alps Slew Mod.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000003e8  2**0
+                  ALLOC, LOAD, DATA
+  1 .text         00000092  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800100  00800100  000003e8  2**0
+                  ALLOC
+  3 .comment      0000002f  00000000  00000000  000003e8  2**0
+                  CONTENTS, READONLY
+  4 .stack.descriptors.hdr 0000000e  00000000  00000000  00000417  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000e0  00000000  00000000  00000425  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000013ec  00000000  00000000  00000505  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000097c  00000000  00000000  000018f1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000662  00000000  00000000  0000226d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000001fc  00000000  00000000  000028d0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000347  00000000  00000000  00002acc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000269  00000000  00000000  00002e13  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000b0  00000000  00000000  0000307c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .text         00000002  0000034a  0000034a  000003de  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000312c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .text.adc_setup 0000002e  00000280  00000280  00000314  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.adc_sleep 00000008  00000312  00000312  000003a6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.adc_wake 00000008  0000031a  0000031a  000003ae  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.adc_single_conversion 0000003a  00000246  00000246  000002da  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text.twi_data_from_master 0000000c  000002fa  000002fa  0000038e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.twi_data_to_master 0000002a  000002ae  000002ae  00000342  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.twi_stop_callback 00000008  00000322  00000322  000003b6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.twi_address_callback 00000008  0000032a  0000032a  000003be  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.timer1_callback 00000008  00000332  00000332  000003c6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.main    000000c6  00000092  00000092  00000126  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .bss.wake_source_timer1 00000001  00800103  00800103  000003e8  2**0
+                  ALLOC
+ 26 .bss.sleep_when_idle 00000001  00800104  00800104  000003e8  2**0
+                  ALLOC
+ 27 .bss.sleep_with_timer 00000001  00800105  00800105  000003e8  2**0
+                  ALLOC
+ 28 .text.timer1_setup 00000006  0000033a  0000033a  000003ce  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.timer1_set_4_5_usec 0000000c  00000306  00000306  0000039a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.timer1_start 00000006  00000340  00000340  000003d4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.timer1_stop 00000004  00000346  00000346  000003da  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.__vector_8 00000048  000001fe  000001fe  00000292  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.twi_slave_initialise 00000014  000002d8  000002d8  0000036c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text.__vector_29 000000a6  00000158  00000158  000001ec  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .text.__dummy_fini 00000002  0000034c  0000034c  000003e0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .text.__dummy_funcs_on_exit 00000002  0000034e  0000034e  000003e2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 37 .text.__dummy_simulator_exit 00000002  00000350  00000350  000003e4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 38 .text.exit    0000000e  000002ec  000002ec  00000380  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 39 .text._Exit   00000002  00000352  00000352  000003e6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	20 c0       	rjmp	.+64     	; 0x42 <__ctors_end>
+   2:	a3 c1       	rjmp	.+838    	; 0x34a <__bad_interrupt>
+   4:	a2 c1       	rjmp	.+836    	; 0x34a <__bad_interrupt>
+   6:	a1 c1       	rjmp	.+834    	; 0x34a <__bad_interrupt>
+   8:	a0 c1       	rjmp	.+832    	; 0x34a <__bad_interrupt>
+   a:	9f c1       	rjmp	.+830    	; 0x34a <__bad_interrupt>
+   c:	9e c1       	rjmp	.+828    	; 0x34a <__bad_interrupt>
+   e:	9d c1       	rjmp	.+826    	; 0x34a <__bad_interrupt>
+  10:	f6 c0       	rjmp	.+492    	; 0x1fe <__vector_8>
+  12:	9b c1       	rjmp	.+822    	; 0x34a <__bad_interrupt>
+  14:	9a c1       	rjmp	.+820    	; 0x34a <__bad_interrupt>
+  16:	99 c1       	rjmp	.+818    	; 0x34a <__bad_interrupt>
+  18:	98 c1       	rjmp	.+816    	; 0x34a <__bad_interrupt>
+  1a:	97 c1       	rjmp	.+814    	; 0x34a <__bad_interrupt>
+  1c:	96 c1       	rjmp	.+812    	; 0x34a <__bad_interrupt>
+  1e:	95 c1       	rjmp	.+810    	; 0x34a <__bad_interrupt>
+  20:	94 c1       	rjmp	.+808    	; 0x34a <__bad_interrupt>
+  22:	93 c1       	rjmp	.+806    	; 0x34a <__bad_interrupt>
+  24:	92 c1       	rjmp	.+804    	; 0x34a <__bad_interrupt>
+  26:	91 c1       	rjmp	.+802    	; 0x34a <__bad_interrupt>
+  28:	90 c1       	rjmp	.+800    	; 0x34a <__bad_interrupt>
+  2a:	8f c1       	rjmp	.+798    	; 0x34a <__bad_interrupt>
+  2c:	8e c1       	rjmp	.+796    	; 0x34a <__bad_interrupt>
+  2e:	8d c1       	rjmp	.+794    	; 0x34a <__bad_interrupt>
+  30:	8c c1       	rjmp	.+792    	; 0x34a <__bad_interrupt>
+  32:	8b c1       	rjmp	.+790    	; 0x34a <__bad_interrupt>
+  34:	8a c1       	rjmp	.+788    	; 0x34a <__bad_interrupt>
+  36:	89 c1       	rjmp	.+786    	; 0x34a <__bad_interrupt>
+  38:	88 c1       	rjmp	.+784    	; 0x34a <__bad_interrupt>
+  3a:	8e c0       	rjmp	.+284    	; 0x158 <__vector_29>
+
+0000003c <.dinit>:
+  3c:	01 00       	.word	0x0001	; ????
+  3e:	01 06       	cpc	r0, r17
+  40:	80 00       	.word	0x0080	; ????
+
+00000042 <__ctors_end>:
+  42:	11 24       	eor	r1, r1
+  44:	1f be       	out	0x3f, r1	; 63
+  46:	cf ef       	ldi	r28, 0xFF	; 255
+  48:	d1 e0       	ldi	r29, 0x01	; 1
+  4a:	de bf       	out	0x3e, r29	; 62
+  4c:	cd bf       	out	0x3d, r28	; 61
+
+0000004e <__do_copy_data>:
+  4e:	ec e3       	ldi	r30, 0x3C	; 60
+  50:	f0 e0       	ldi	r31, 0x00	; 0
+  52:	40 e0       	ldi	r20, 0x00	; 0
+  54:	17 c0       	rjmp	.+46     	; 0x84 <__do_clear_bss+0x8>
+  56:	b5 91       	lpm	r27, Z+
+  58:	a5 91       	lpm	r26, Z+
+  5a:	35 91       	lpm	r19, Z+
+  5c:	25 91       	lpm	r18, Z+
+  5e:	05 91       	lpm	r16, Z+
+  60:	07 fd       	sbrc	r16, 7
+  62:	0c c0       	rjmp	.+24     	; 0x7c <__do_clear_bss>
+  64:	95 91       	lpm	r25, Z+
+  66:	85 91       	lpm	r24, Z+
+  68:	ef 01       	movw	r28, r30
+  6a:	f9 2f       	mov	r31, r25
+  6c:	e8 2f       	mov	r30, r24
+  6e:	05 90       	lpm	r0, Z+
+  70:	0d 92       	st	X+, r0
+  72:	a2 17       	cp	r26, r18
+  74:	b3 07       	cpc	r27, r19
+  76:	d9 f7       	brne	.-10     	; 0x6e <__do_copy_data+0x20>
+  78:	fe 01       	movw	r30, r28
+  7a:	04 c0       	rjmp	.+8      	; 0x84 <__do_clear_bss+0x8>
+
+0000007c <__do_clear_bss>:
+  7c:	1d 92       	st	X+, r1
+  7e:	a2 17       	cp	r26, r18
+  80:	b3 07       	cpc	r27, r19
+  82:	e1 f7       	brne	.-8      	; 0x7c <__do_clear_bss>
+  84:	e1 34       	cpi	r30, 0x41	; 65
+  86:	f4 07       	cpc	r31, r20
+  88:	31 f7       	brne	.-52     	; 0x56 <__do_copy_data+0x8>
+  8a:	03 d0       	rcall	.+6      	; 0x92 <_etext>
+  8c:	2f c1       	rjmp	.+606    	; 0x2ec <exit>
+
+0000008e <_exit>:
+  8e:	f8 94       	cli
+
+00000090 <__stop_program>:
+  90:	ff cf       	rjmp	.-2      	; 0x90 <__stop_program>
+
+Disassembly of section .text:
+
+0000034a <__bad_interrupt>:
+ 34a:	5a ce       	rjmp	.-844    	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.adc_setup:
+
+00000280 <adc_setup>:
+uint8_t state = 0;
+
+void adc_setup(void)
+{
+	// Set pin direction to input and turn off pull-ups
+	DDRA &= ~((1 << ADC1D) | (1 << ADC2D));
+ 280:	8a b3       	in	r24, 0x1a	; 26
+ 282:	89 7f       	andi	r24, 0xF9	; 249
+ 284:	8a bb       	out	0x1a, r24	; 26
+	PORTA &= ~((1 << ADC1D) | (1 << ADC2D));
+ 286:	8b b3       	in	r24, 0x1b	; 27
+ 288:	89 7f       	andi	r24, 0xF9	; 249
+ 28a:	8b bb       	out	0x1b, r24	; 27
+	
+	ADMUXA |= (0b0001 << MUX0);  // select ADC channel 1 (PA1)
+ 28c:	89 b1       	in	r24, 0x09	; 9
+ 28e:	81 60       	ori	r24, 0x01	; 1
+ 290:	89 b9       	out	0x09, r24	; 9
+	ADMUXB &= 0x00;              // Select VCC reference (3.3V) and 1x Gain
+ 292:	88 b1       	in	r24, 0x08	; 8
+ 294:	18 b8       	out	0x08, r1	; 8
+	ADCSRA |= (1 << ADEN);       // Enable the ADC module
+ 296:	85 b1       	in	r24, 0x05	; 5
+ 298:	80 68       	ori	r24, 0x80	; 128
+ 29a:	85 b9       	out	0x05, r24	; 5
+	ADCSRA |= (0b100 << ADPS0);  // Enable ADC with Clock prescaled by 16 ; If Clock speed is 8MHz, then ADC clock =
+ 29c:	85 b1       	in	r24, 0x05	; 5
+ 29e:	84 60       	ori	r24, 0x04	; 4
+ 2a0:	85 b9       	out	0x05, r24	; 5
+	// 8MHz/16 = 500kHz
+	DIDR0  |= ((1 << ADC2D) | (1 << ADC1D)); // Disable digital inputs for ADC pins to save power
+ 2a2:	e0 e6       	ldi	r30, 0x60	; 96
+ 2a4:	f0 e0       	ldi	r31, 0x00	; 0
+ 2a6:	80 81       	ld	r24, Z
+ 2a8:	86 60       	ori	r24, 0x06	; 6
+ 2aa:	80 83       	st	Z, r24
+ 2ac:	08 95       	ret
+
+Disassembly of section .text.adc_sleep:
+
+00000312 <adc_sleep>:
+}
+
+void adc_sleep(void)
+{
+	ADCSRA &= ~(1 << ADEN);      // Disable the ADC module	
+ 312:	85 b1       	in	r24, 0x05	; 5
+ 314:	8f 77       	andi	r24, 0x7F	; 127
+ 316:	85 b9       	out	0x05, r24	; 5
+ 318:	08 95       	ret
+
+Disassembly of section .text.adc_wake:
+
+0000031a <adc_wake>:
+}
+
+void adc_wake(void)
+{
+	ADCSRA |= (1 << ADEN);       // Enable the ADC module	
+ 31a:	85 b1       	in	r24, 0x05	; 5
+ 31c:	80 68       	ori	r24, 0x80	; 128
+ 31e:	85 b9       	out	0x05, r24	; 5
+ 320:	08 95       	ret
+
+Disassembly of section .text.adc_single_conversion:
+
+00000246 <adc_single_conversion>:
+
+uint16_t adc_single_conversion(uint8_t channel)
+{
+	uint16_t adcResult;
+	
+	if (channel < 1) return 0; // channel not allowed in this configuration
+ 246:	88 23       	and	r24, r24
+ 248:	c1 f0       	breq	.+48     	; 0x27a <adc_single_conversion+0x34>
+
+	ADMUXA &= 0x00; // Clear channel selection
+ 24a:	99 b1       	in	r25, 0x09	; 9
+ 24c:	19 b8       	out	0x09, r1	; 9
+	ADMUXA |= (1 << (channel - 1));  // set ADC channel
+ 24e:	49 b1       	in	r20, 0x09	; 9
+ 250:	90 e0       	ldi	r25, 0x00	; 0
+ 252:	01 97       	sbiw	r24, 0x01	; 1
+ 254:	21 e0       	ldi	r18, 0x01	; 1
+ 256:	30 e0       	ldi	r19, 0x00	; 0
+ 258:	b9 01       	movw	r22, r18
+ 25a:	02 c0       	rjmp	.+4      	; 0x260 <adc_single_conversion+0x1a>
+ 25c:	66 0f       	add	r22, r22
+ 25e:	77 1f       	adc	r23, r23
+ 260:	8a 95       	dec	r24
+ 262:	e2 f7       	brpl	.-8      	; 0x25c <adc_single_conversion+0x16>
+ 264:	cb 01       	movw	r24, r22
+ 266:	84 2b       	or	r24, r20
+ 268:	89 b9       	out	0x09, r24	; 9
+	ADCSRA |= (1 << ADSC); // start a single conversion
+ 26a:	85 b1       	in	r24, 0x05	; 5
+ 26c:	80 64       	ori	r24, 0x40	; 64
+ 26e:	85 b9       	out	0x05, r24	; 5
+
+	while ((ADCSRA & (1 << ADSC)) != 0)
+ 270:	2e 99       	sbic	0x05, 6	; 5
+ 272:	fe cf       	rjmp	.-4      	; 0x270 <adc_single_conversion+0x2a>
+	;                      // Wait till conversion is complete
+	adcResult = ADCW;      // Read the ADC result
+ 274:	86 b1       	in	r24, 0x06	; 6
+ 276:	97 b1       	in	r25, 0x07	; 7
+
+	return adcResult;
+ 278:	08 95       	ret
+
+uint16_t adc_single_conversion(uint8_t channel)
+{
+	uint16_t adcResult;
+	
+	if (channel < 1) return 0; // channel not allowed in this configuration
+ 27a:	80 e0       	ldi	r24, 0x00	; 0
+ 27c:	90 e0       	ldi	r25, 0x00	; 0
+	while ((ADCSRA & (1 << ADSC)) != 0)
+	;                      // Wait till conversion is complete
+	adcResult = ADCW;      // Read the ADC result
+
+	return adcResult;
+}
+ 27e:	08 95       	ret
+
+Disassembly of section .text.twi_data_from_master:
+
+000002fa <twi_data_from_master>:
+
+void twi_data_from_master(uint8_t data)
+{
+	command = data;
+ 2fa:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	sleep_when_idle = 1;
+ 2fe:	81 e0       	ldi	r24, 0x01	; 1
+ 300:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <sleep_when_idle>
+ 304:	08 95       	ret
+
+Disassembly of section .text.twi_data_to_master:
+
+000002ae <twi_data_to_master>:
+
+uint8_t twi_data_to_master(void)
+{
+	uint8_t data_to_master;
+	
+	switch (command)
+ 2ae:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 2b2:	80 31       	cpi	r24, 0x10	; 16
+ 2b4:	31 f0       	breq	.+12     	; 0x2c2 <twi_data_to_master+0x14>
+ 2b6:	81 31       	cpi	r24, 0x11	; 17
+ 2b8:	39 f0       	breq	.+14     	; 0x2c8 <twi_data_to_master+0x1a>
+ 2ba:	8f 30       	cpi	r24, 0x0F	; 15
+ 2bc:	41 f4       	brne	.+16     	; 0x2ce <twi_data_to_master+0x20>
+			break;
+		case 0x11:
+			data_to_master = y_ready;
+			break;
+		case 0x0F:
+			data_to_master = 0xF1;
+ 2be:	81 ef       	ldi	r24, 0xF1	; 241
+ 2c0:	07 c0       	rjmp	.+14     	; 0x2d0 <twi_data_to_master+0x22>
+	uint8_t data_to_master;
+	
+	switch (command)
+	{
+		case 0x10:
+			data_to_master = x_ready;
+ 2c2:	80 91 01 01 	lds	r24, 0x0101	; 0x800101 <x_ready>
+			break;
+ 2c6:	04 c0       	rjmp	.+8      	; 0x2d0 <twi_data_to_master+0x22>
+		case 0x11:
+			data_to_master = y_ready;
+ 2c8:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <y_ready>
+			break;
+ 2cc:	01 c0       	rjmp	.+2      	; 0x2d0 <twi_data_to_master+0x22>
+		case 0x0F:
+			data_to_master = 0xF1;
+			break;
+		default:
+			data_to_master = 0x00;
+ 2ce:	80 e0       	ldi	r24, 0x00	; 0
+			break;
+	}
+	
+	sleep_when_idle = 1;
+ 2d0:	91 e0       	ldi	r25, 0x01	; 1
+ 2d2:	90 93 04 01 	sts	0x0104, r25	; 0x800104 <sleep_when_idle>
+	
+	return data_to_master;
+}
+ 2d6:	08 95       	ret
+
+Disassembly of section .text.twi_stop_callback:
+
+00000322 <twi_stop_callback>:
+
+void twi_stop_callback(void)
+{
+	sleep_with_timer = 1; // Set a flag to go to sleep once back in main loop
+ 322:	81 e0       	ldi	r24, 0x01	; 1
+ 324:	80 93 05 01 	sts	0x0105, r24	; 0x800105 <sleep_with_timer>
+ 328:	08 95       	ret
+
+Disassembly of section .text.twi_address_callback:
+
+0000032a <twi_address_callback>:
+}
+
+void twi_address_callback(void)
+{
+	sleep_when_idle = 1;
+ 32a:	81 e0       	ldi	r24, 0x01	; 1
+ 32c:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <sleep_when_idle>
+ 330:	08 95       	ret
+
+Disassembly of section .text.timer1_callback:
+
+00000332 <timer1_callback>:
+}
+
+void timer1_callback(void)
+{
+	wake_source_timer1 = 1;
+ 332:	81 e0       	ldi	r24, 0x01	; 1
+ 334:	80 93 03 01 	sts	0x0103, r24	; 0x800103 <wake_source_timer1>
+ 338:	08 95       	ret
+
+Disassembly of section .text.main:
+
+00000092 <main>:
+
+int main(void)
+{
+	int8_t x_conv, y_conv;
+
+	CCP = 0xD8; // write access signature to Configuration Change Protection Register. Might be redundant
+  92:	88 ed       	ldi	r24, 0xD8	; 216
+  94:	80 93 71 00 	sts	0x0071, r24	; 0x800071 <__TEXT_REGION_LENGTH__+0x7ff071>
+	CLKPR = 0;  // Force clock to 8MHz
+  98:	10 92 73 00 	sts	0x0073, r1	; 0x800073 <__TEXT_REGION_LENGTH__+0x7ff073>
+	
+	MCUCR = (0 << SM1) | (0 << SM0) | (0 << SE); // Idle Sleep Mode
+  9c:	15 be       	out	0x35, r1	; 53
+	DDRB &= ~((1 << PORTB0) | (1 << PORTB2));
+	PUEB |= ((1 << PUEB0) | (1 << PUEB2));
+	// Set up PORTB2 for debug
+	DDRB |= (1 << PORTB1);
+#else
+	DDRB &= ~((1 << PORTB0) | (1 << PORTB1) | (1 << PORTB2));
+  9e:	87 b3       	in	r24, 0x17	; 23
+  a0:	88 7f       	andi	r24, 0xF8	; 248
+  a2:	87 bb       	out	0x17, r24	; 23
+	PUEB |= ((1 << PUEB0) | (1 << PUEB1) | (1 << PUEB2));
+  a4:	e2 e6       	ldi	r30, 0x62	; 98
+  a6:	f0 e0       	ldi	r31, 0x00	; 0
+  a8:	80 81       	ld	r24, Z
+  aa:	87 60       	ori	r24, 0x07	; 7
+  ac:	80 83       	st	Z, r24
+#endif
+	DDRA &= ~((1 << PORTA0) | (1 << PORTA3) | (1 << PORTA5) | (1 << PORTA7));
+  ae:	8a b3       	in	r24, 0x1a	; 26
+  b0:	86 75       	andi	r24, 0x56	; 86
+  b2:	8a bb       	out	0x1a, r24	; 26
+	PUEA |= ((1 << PUEA0) | (1 << PUEA3) | (1 << PUEA5) | (1 << PUEA7));
+  b4:	c3 e6       	ldi	r28, 0x63	; 99
+  b6:	d0 e0       	ldi	r29, 0x00	; 0
+  b8:	88 81       	ld	r24, Y
+  ba:	89 6a       	ori	r24, 0xA9	; 169
+  bc:	88 83       	st	Y, r24
+	
+	// Leave ADC, TWI, and Timer1 peripherals enabled
+	PRR =  (1<<PRUSART0) | (1<<PRUSART0) | (1<<PRSPI) | (1<<PRTIM2) | (1<<PRTIM0); // Disable unused peripherals
+  be:	8a e3       	ldi	r24, 0x3A	; 58
+  c0:	80 93 70 00 	sts	0x0070, r24	; 0x800070 <__TEXT_REGION_LENGTH__+0x7ff070>
+	
+	adc_setup();
+  c4:	dd d0       	rcall	.+442    	; 0x280 <adc_setup>
+
+	// Unnecessary, but explicitly set TWI pins as inputs, no pull
+	DDRA &= ~((1 << PORTA4) | (1 << PORTA6));
+  c6:	8a b3       	in	r24, 0x1a	; 26
+  c8:	8f 7a       	andi	r24, 0xAF	; 175
+  ca:	8a bb       	out	0x1a, r24	; 26
+	PUEA &= ~((1 << PUEA4) | (1 << PUEA6));
+  cc:	88 81       	ld	r24, Y
+  ce:	8f 7a       	andi	r24, 0xAF	; 175
+  d0:	88 83       	st	Y, r24
+	
+	/* initialize TWI Slave */
+	twi_slave_initialise();
+  d2:	02 d1       	rcall	.+516    	; 0x2d8 <twi_slave_initialise>
+	
+	// Setup Timer 1
+	timer1_setup();
+  d4:	32 d1       	rcall	.+612    	; 0x33a <timer1_setup>
+
+	// Enable interrupts
+	sei();
+  d6:	78 94       	sei
+
+	while(1)
+	{
+		debug_pb1_low(); // Drive low while awake
+		
+		if (wake_source_timer1 == 1)
+  d8:	80 91 03 01 	lds	r24, 0x0103	; 0x800103 <wake_source_timer1>
+  dc:	81 30       	cpi	r24, 0x01	; 1
+  de:	f1 f4       	brne	.+60     	; 0x11c <__DATA_REGION_LENGTH__+0x1c>
+		{
+			wake_source_timer1 = 0;
+  e0:	10 92 03 01 	sts	0x0103, r1	; 0x800103 <wake_source_timer1>
+			
+			adc_wake();
+  e4:	1a d1       	rcall	.+564    	; 0x31a <adc_wake>
+			x_conv = (-1 * (int8_t)(adc_single_conversion(PINA1) / 4)) + 127;
+  e6:	81 e0       	ldi	r24, 0x01	; 1
+  e8:	ae d0       	rcall	.+348    	; 0x246 <adc_single_conversion>
+  ea:	96 95       	lsr	r25
+  ec:	87 95       	ror	r24
+  ee:	96 95       	lsr	r25
+  f0:	87 95       	ror	r24
+  f2:	cf e7       	ldi	r28, 0x7F	; 127
+  f4:	c8 1b       	sub	r28, r24
+			y_conv = (int8_t)(adc_single_conversion(PINA2) / 4) - 128;
+  f6:	82 e0       	ldi	r24, 0x02	; 2
+  f8:	a6 d0       	rcall	.+332    	; 0x246 <adc_single_conversion>
+  fa:	96 95       	lsr	r25
+  fc:	87 95       	ror	r24
+  fe:	96 95       	lsr	r25
+ 100:	87 95       	ror	r24
+ 102:	80 58       	subi	r24, 0x80	; 128
+			
+			x_ready = x_conv;
+ 104:	c0 93 01 01 	sts	0x0101, r28	; 0x800101 <x_ready>
+			y_ready = y_conv;
+ 108:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <y_ready>
+
+			adc_sleep();
+ 10c:	02 d1       	rcall	.+516    	; 0x312 <adc_sleep>
+			// Now that we've polled the joystick, we can sleep until the TWI address match interrupt wakes us
+			debug_pb1_high(); // Drive high while asleep
+			sleep_mode();
+ 10e:	85 b7       	in	r24, 0x35	; 53
+ 110:	80 62       	ori	r24, 0x20	; 32
+ 112:	85 bf       	out	0x35, r24	; 53
+ 114:	88 95       	sleep
+ 116:	85 b7       	in	r24, 0x35	; 53
+ 118:	8f 7d       	andi	r24, 0xDF	; 223
+ 11a:	85 bf       	out	0x35, r24	; 53
+		}
+		
+		if (sleep_with_timer == 1)
+ 11c:	80 91 05 01 	lds	r24, 0x0105	; 0x800105 <sleep_with_timer>
+ 120:	81 30       	cpi	r24, 0x01	; 1
+ 122:	61 f4       	brne	.+24     	; 0x13c <__DATA_REGION_LENGTH__+0x3c>
+		{
+			// Configure to sleep and only poll each channel once about 4.5ms after the sending of y axis data completes
+			sleep_with_timer = 0;
+ 124:	10 92 05 01 	sts	0x0105, r1	; 0x800105 <sleep_with_timer>
+			
+			timer1_set_4_5_usec();
+ 128:	ee d0       	rcall	.+476    	; 0x306 <timer1_set_4_5_usec>
+			timer1_start();
+ 12a:	0a d1       	rcall	.+532    	; 0x340 <timer1_start>
+
+			debug_pb1_high(); // Drive high while asleep
+			sleep_mode();
+ 12c:	85 b7       	in	r24, 0x35	; 53
+ 12e:	80 62       	ori	r24, 0x20	; 32
+ 130:	85 bf       	out	0x35, r24	; 53
+ 132:	88 95       	sleep
+ 134:	85 b7       	in	r24, 0x35	; 53
+ 136:	8f 7d       	andi	r24, 0xDF	; 223
+ 138:	85 bf       	out	0x35, r24	; 53
+ 13a:	ce cf       	rjmp	.-100    	; 0xd8 <main+0x46>
+		}
+		else if (sleep_when_idle == 1)
+ 13c:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <sleep_when_idle>
+ 140:	81 30       	cpi	r24, 0x01	; 1
+ 142:	51 f6       	brne	.-108    	; 0xd8 <main+0x46>
+		{
+			sleep_when_idle = 0;
+ 144:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <sleep_when_idle>
+			debug_pb1_high(); // Drive high while asleep
+			sleep_mode();
+ 148:	85 b7       	in	r24, 0x35	; 53
+ 14a:	80 62       	ori	r24, 0x20	; 32
+ 14c:	85 bf       	out	0x35, r24	; 53
+ 14e:	88 95       	sleep
+ 150:	85 b7       	in	r24, 0x35	; 53
+ 152:	8f 7d       	andi	r24, 0xDF	; 223
+ 154:	85 bf       	out	0x35, r24	; 53
+ 156:	c0 cf       	rjmp	.-128    	; 0xd8 <main+0x46>
+
+Disassembly of section .text.timer1_setup:
+
+0000033a <timer1_setup>:
+#define F_CPU 8000000
+#endif
+
+void timer1_setup(void)
+{
+	TIMSK1 = (1 << TOIE1); // Enable timer overflow interrupt
+ 33a:	81 e0       	ldi	r24, 0x01	; 1
+ 33c:	8f b9       	out	0x0f, r24	; 15
+ 33e:	08 95       	ret
+
+Disassembly of section .text.timer1_set_4_5_usec:
+
+00000306 <timer1_set_4_5_usec>:
+	ticks = 2250;
+#else
+	ticks = 562; // 1Mhz assumed
+#endif
+
+	TCNT1 = 0xFFFF - ticks;
+ 306:	8b e6       	ldi	r24, 0x6B	; 107
+ 308:	9e ee       	ldi	r25, 0xEE	; 238
+ 30a:	9d bd       	out	0x2d, r25	; 45
+ 30c:	8c bd       	out	0x2c, r24	; 44
+	
+	return 1;
+}
+ 30e:	81 e0       	ldi	r24, 0x01	; 1
+ 310:	08 95       	ret
+
+Disassembly of section .text.timer1_start:
+
+00000340 <timer1_start>:
+
+void timer1_start(void)
+{
+	TCCR1B = ((0 << CS12) | (1 << CS11) | (0 << CS10)); // Set prescaler to CLKio/8
+ 340:	82 e0       	ldi	r24, 0x02	; 2
+ 342:	8e bd       	out	0x2e, r24	; 46
+ 344:	08 95       	ret
+
+Disassembly of section .text.timer1_stop:
+
+00000346 <timer1_stop>:
+}
+
+void timer1_stop(void)
+{
+	TCCR1B = 0;
+ 346:	1e bc       	out	0x2e, r1	; 46
+ 348:	08 95       	ret
+
+Disassembly of section .text.__vector_8:
+
+000001fe <__vector_8>:
+{
+	return TCNT1;
+}
+
+ISR(TIMER1_OVF_vect)
+{
+ 1fe:	1f 92       	push	r1
+ 200:	0f 92       	push	r0
+ 202:	0f b6       	in	r0, 0x3f	; 63
+ 204:	0f 92       	push	r0
+ 206:	11 24       	eor	r1, r1
+ 208:	2f 93       	push	r18
+ 20a:	3f 93       	push	r19
+ 20c:	4f 93       	push	r20
+ 20e:	5f 93       	push	r21
+ 210:	6f 93       	push	r22
+ 212:	7f 93       	push	r23
+ 214:	8f 93       	push	r24
+ 216:	9f 93       	push	r25
+ 218:	af 93       	push	r26
+ 21a:	bf 93       	push	r27
+ 21c:	ef 93       	push	r30
+ 21e:	ff 93       	push	r31
+	timer1_stop();
+ 220:	92 d0       	rcall	.+292    	; 0x346 <timer1_stop>
+	timer1_callback();
+ 222:	87 d0       	rcall	.+270    	; 0x332 <timer1_callback>
+ 224:	ff 91       	pop	r31
+ 226:	ef 91       	pop	r30
+ 228:	bf 91       	pop	r27
+ 22a:	af 91       	pop	r26
+ 22c:	9f 91       	pop	r25
+ 22e:	8f 91       	pop	r24
+ 230:	7f 91       	pop	r23
+ 232:	6f 91       	pop	r22
+ 234:	5f 91       	pop	r21
+ 236:	4f 91       	pop	r20
+ 238:	3f 91       	pop	r19
+ 23a:	2f 91       	pop	r18
+ 23c:	0f 90       	pop	r0
+ 23e:	0f be       	out	0x3f, r0	; 63
+ 240:	0f 90       	pop	r0
+ 242:	1f 90       	pop	r1
+ 244:	18 95       	reti
+
+Disassembly of section .text.twi_slave_initialise:
+
+000002d8 <twi_slave_initialise>:
+ *  the TWI Master to write or read the Slave
+ *  \note  The peripheral must be initialized in advance.
+ *
+ */
+void twi_slave_initialise(void){    
+   TWSA = (uint8_t)(TWI_ADDR << 1);     // Set TWI slave address. 
+ 2d8:	82 e8       	ldi	r24, 0x82	; 130
+ 2da:	80 93 a2 00 	sts	0x00A2, r24	; 0x8000a2 <__TEXT_REGION_LENGTH__+0x7ff0a2>
+   TWI_SLAVE_DATA = 0xFF;               // Default content = SDA released.
+ 2de:	8f ef       	ldi	r24, 0xFF	; 255
+ 2e0:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7ff0a0>
+   TWI_SLAVE_CTRLA = (uint8_t)((1<<TWI_INTERFACE_ENAB)|(1<<TWI_SDI_HOLD_EANB)|              // Enable TWI interface and release TWI pins.
+ 2e4:	8c eb       	ldi	r24, 0xBC	; 188
+ 2e6:	80 93 a5 00 	sts	0x00A5, r24	; 0x8000a5 <__TEXT_REGION_LENGTH__+0x7ff0a5>
+ 2ea:	08 95       	ret
+
+Disassembly of section .text.__vector_29:
+
+00000158 <__vector_29>:
+ *
+ *Asserts ACK, holds clock low until execution of a write to TWI_SLAVE_CTRLB register
+ *
+****************************************************************************/
+ISR(TWI_SLAVE_vect)
+{
+ 158:	1f 92       	push	r1
+ 15a:	0f 92       	push	r0
+ 15c:	0f b6       	in	r0, 0x3f	; 63
+ 15e:	0f 92       	push	r0
+ 160:	11 24       	eor	r1, r1
+ 162:	2f 93       	push	r18
+ 164:	3f 93       	push	r19
+ 166:	4f 93       	push	r20
+ 168:	5f 93       	push	r21
+ 16a:	6f 93       	push	r22
+ 16c:	7f 93       	push	r23
+ 16e:	8f 93       	push	r24
+ 170:	9f 93       	push	r25
+ 172:	af 93       	push	r26
+ 174:	bf 93       	push	r27
+ 176:	ef 93       	push	r30
+ 178:	ff 93       	push	r31
+        uint8_t status = TWI_SLAVE_STATUS & 0xC0;
+ 17a:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+        
+        if (status & TWI_DATA_INTERRUPT) {
+ 17e:	88 23       	and	r24, r24
+ 180:	94 f4       	brge	.+36     	; 0x1a6 <__vector_29+0x4e>
+                if (TWI_SLAVE_STATUS & (1<<TWI_RD_WR_DIR)) {
+ 182:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 186:	81 ff       	sbrs	r24, 1
+ 188:	07 c0       	rjmp	.+14     	; 0x198 <__vector_29+0x40>
+                        /*Master Reads data from slave*/
+                        TWI_SLAVE_DATA = twi_data_to_master(); // This function gets data from the application and loads it into the TWI_SLAVE_DATA (Two Wire Send Data) register             
+ 18a:	91 d0       	rcall	.+290    	; 0x2ae <twi_data_to_master>
+ 18c:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7ff0a0>
+                  
+                        TWI_SLAVE_CTRLB = (uint8_t) ((1<<TWI_SLAVE_CMD1)|(1<<TWI_SLAVE_CMD0)); // release SCL
+ 190:	83 e0       	ldi	r24, 0x03	; 3
+ 192:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+ 196:	22 c0       	rjmp	.+68     	; 0x1dc <__vector_29+0x84>
+                } else {
+                        /* Master Write */
+                        /* Here we read the base address */
+                        /* If the base address is with in the range save it, else NACK the Master */
+                        TWI_SLAVE_CTRLB = (uint8_t) ((1<<TWI_SLAVE_CMD1)|(1<<TWI_SLAVE_CMD0));
+ 198:	83 e0       	ldi	r24, 0x03	; 3
+ 19a:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+                        twi_data_from_master(TWI_SLAVE_DATA);  // Callback function: data from master to application                       
+ 19e:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7ff0a0>
+ 1a2:	ab d0       	rcall	.+342    	; 0x2fa <twi_data_from_master>
+ 1a4:	1b c0       	rjmp	.+54     	; 0x1dc <__vector_29+0x84>
+                }
+        } else if (status & TWI_ADDRESS_STOP_MATCH) {
+ 1a6:	86 ff       	sbrs	r24, 6
+ 1a8:	19 c0       	rjmp	.+50     	; 0x1dc <__vector_29+0x84>
+                /* Address match can happen due to Collision */
+                if (TWI_SLAVE_STATUS & TWI_BUS_COLLISION) {
+ 1aa:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 1ae:	83 ff       	sbrs	r24, 3
+ 1b0:	08 c0       	rjmp	.+16     	; 0x1c2 <__vector_29+0x6a>
+                        /* Clear the Collision Flag */
+                        TWI_SLAVE_STATUS = TWI_SLAVE_STATUS;
+ 1b2:	e3 ea       	ldi	r30, 0xA3	; 163
+ 1b4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b6:	80 81       	ld	r24, Z
+ 1b8:	80 83       	st	Z, r24
+                        /* Wait for any Start Condition */
+                        TWI_SLAVE_CTRLB = (uint8_t) (1<<TWI_SLAVE_CMD1);
+ 1ba:	82 e0       	ldi	r24, 0x02	; 2
+ 1bc:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+ 1c0:	0d c0       	rjmp	.+26     	; 0x1dc <__vector_29+0x84>
+                } else {
+                        /* Address Match */
+                        if (TWI_SLAVE_STATUS & (1<<TWAS)) {
+ 1c2:	80 91 a3 00 	lds	r24, 0x00A3	; 0x8000a3 <__TEXT_REGION_LENGTH__+0x7ff0a3>
+ 1c6:	80 ff       	sbrs	r24, 0
+ 1c8:	05 c0       	rjmp	.+10     	; 0x1d4 <__vector_29+0x7c>
+                                /* Execute ACK and then receive next byte or set TWDIF to send the data */                      
+                                TWI_SLAVE_CTRLB = (uint8_t)((1<<TWI_SLAVE_CMD1)|(1<<TWI_SLAVE_CMD0));
+ 1ca:	83 e0       	ldi	r24, 0x03	; 3
+ 1cc:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+                                twi_address_callback();
+ 1d0:	ac d0       	rcall	.+344    	; 0x32a <twi_address_callback>
+ 1d2:	04 c0       	rjmp	.+8      	; 0x1dc <__vector_29+0x84>
+                        }  else {
+                                /* Stop Condition */
+                                /* Wait for any Start Condition */
+                                TWI_SLAVE_CTRLB = (uint8_t) (1<<TWI_SLAVE_CMD1);
+ 1d4:	82 e0       	ldi	r24, 0x02	; 2
+ 1d6:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <__TEXT_REGION_LENGTH__+0x7ff0a4>
+								twi_stop_callback();
+ 1da:	a3 d0       	rcall	.+326    	; 0x322 <twi_stop_callback>
+                        }
+                }
+        }
+}
+ 1dc:	ff 91       	pop	r31
+ 1de:	ef 91       	pop	r30
+ 1e0:	bf 91       	pop	r27
+ 1e2:	af 91       	pop	r26
+ 1e4:	9f 91       	pop	r25
+ 1e6:	8f 91       	pop	r24
+ 1e8:	7f 91       	pop	r23
+ 1ea:	6f 91       	pop	r22
+ 1ec:	5f 91       	pop	r21
+ 1ee:	4f 91       	pop	r20
+ 1f0:	3f 91       	pop	r19
+ 1f2:	2f 91       	pop	r18
+ 1f4:	0f 90       	pop	r0
+ 1f6:	0f be       	out	0x3f, r0	; 63
+ 1f8:	0f 90       	pop	r0
+ 1fa:	1f 90       	pop	r1
+ 1fc:	18 95       	reti
+
+Disassembly of section .text.__dummy_fini:
+
+0000034c <_fini>:
+ 34c:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+0000034e <__funcs_on_exit>:
+ 34e:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+00000350 <__simulator_exit>:
+ 350:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+000002ec <exit>:
+ 2ec:	ec 01       	movw	r28, r24
+ 2ee:	2f d0       	rcall	.+94     	; 0x34e <__funcs_on_exit>
+ 2f0:	2d d0       	rcall	.+90     	; 0x34c <_fini>
+ 2f2:	ce 01       	movw	r24, r28
+ 2f4:	2d d0       	rcall	.+90     	; 0x350 <__simulator_exit>
+ 2f6:	ce 01       	movw	r24, r28
+ 2f8:	2c d0       	rcall	.+88     	; 0x352 <_Exit>
+
+Disassembly of section .text._Exit:
+
+00000352 <_Exit>:
+ 352:	9d de       	rcall	.-710    	; 0x8e <_exit>

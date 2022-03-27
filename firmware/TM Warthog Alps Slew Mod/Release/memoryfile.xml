@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="TM Warthog Alps Slew Mod.elf">                 
+    <memory name="program">              
+      <units>bytes</units>                 
+      <length>4096</length>                 
+      <used>828</used>                     
+      <free>3268</free>                     
+    </memory>                              
+    <memory name="data">                 
+      <units>bytes</units>                 
+      <length>256</length>                 
+      <used>6</used>                     
+      <free>250</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 
