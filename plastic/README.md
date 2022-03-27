@@ -1,6 +1,6 @@
 # Plastics
 
-![frame](pics/frame.png)
+![frame](../pics/frame.png)
 
 All plastics were designed in Fusion 360, and appropriate archive files have been uploaded.
 
