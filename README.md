@@ -25,7 +25,7 @@ Alright then, You'll need to handle
 - [The Firmware](firmware/)
 
 
-## Building
+### Building
 
 - Once the PCB is complete, program it with the firmware.
 
