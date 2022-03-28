@@ -25,3 +25,5 @@ https://www.aliexpress.com/item/32968483467.html?spm=a2g0o.order_list.0.0.21ef18
 ## Assembly
 
 It's perfectly possible to construct the entire board with a soldering iron, but is certainly more convenient to install the microcontroller and passives using hot air.
+
+If your PCB was delivered with excess material near the header side, I'd recommend filing it down for a cleaner fit.
