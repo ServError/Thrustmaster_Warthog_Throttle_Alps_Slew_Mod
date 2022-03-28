@@ -43,7 +43,7 @@ Alright then, You'll need to handle
 
 - Connect the wire to the mainboard.
 
-- Reassemble throttle while taking extreme care not to pinch cables between the plastic posts an throttle body. Feel free to wrap longer wires around the posts before assembling Use flashlight to triple verify clearance on other side before reinstall large screws.
+- Reassemble throttle while taking extreme care not to pinch cables between the plastic posts and throttle body. Feel free to wrap longer wires around the posts before assembling Use flashlight to triple verify clearance on other side before reinstall large screws.
 
 - Plug in throttle and download [calibration tool with modified deadzone values](https://drive.google.com/file/d/1Ltr-QlWskVfA8-Oxs-A-aUs4HPpge5iv/view?usp=sharing). Run executable and follow instructions.
 
