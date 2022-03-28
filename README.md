@@ -48,3 +48,18 @@ Alright then, You'll need to handle
 - Plug in throttle and download [calibration tool with modified deadzone values](https://drive.google.com/file/d/1Ltr-QlWskVfA8-Oxs-A-aUs4HPpge5iv/view?usp=sharing). Run executable and follow instructions.
 
 - Open Control Panel and verify stick behavior under Game Controllers.
+
+### Drift correction / recalibration
+
+- Download the calibration tool.
+
+- Extract the files and edit A10_calibration.txt in a text editor.
+
+- If the X axis is drifting, modify `Standard_DZ_SX = 0x05;` and increase 0x05 to something like 0x07. Remember to use hex values, not decimal (0x0A = 10, etc).
+
+- Recalibrate using the exe.
+
+- Check for drift. If still present, increase the value and calibrate again. Continue until no drift is present.
+
+- Repeat for the Y axis by modifying `Standard_DZ_SY = 0x05;`
+- 
