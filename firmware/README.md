@@ -4,7 +4,7 @@ The firmware was developed in Atmel/Microchip studio, and targets the ATTINY441 
 
 ## Flashing
 
-If you just want to flash the MCU and get up and running, grab the hex file in the [Release](TM Warthog Alps Slew Mod/Release/) folder and flash it using your method of choice. I used a USBTinyISP and a DIP8 clip on the appropriate pins(rewired by jumping between the two ribbon cables) while supplying power over the main cable, but there are many flashers and connection methods at your disposal.
+If you just want to flash the MCU and get up and running, grab the hex file in the [Release](TM%20Warthog%20Alps%20Slew%20Mod/Release/) folder and flash it using your method of choice. I used a USBTinyISP and a DIP8 clip on the appropriate pins(rewired by jumping between the two ribbon cables) while supplying power over the main cable, but there are many flashers and connection methods at your disposal.
 
 ## Debugging
 
