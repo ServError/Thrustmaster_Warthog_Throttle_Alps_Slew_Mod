@@ -62,4 +62,3 @@ Alright then, You'll need to handle
 - Check for drift. If still present, increase the value and calibrate again. Continue until no drift is present.
 
 - Repeat for the Y axis by modifying `Standard_DZ_SY = 0x05;`
-- 
