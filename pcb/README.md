@@ -15,12 +15,11 @@ For US based people, I recommend [OSH Park](https://oshpark.com/shared_projects/
 | 100nF cap     | 1        | [link](https://www.mouser.com/ProductDetail/187-CL21B104KACNNNC) |
 | 10k Ohm res   | 1        | [link](https://www.mouser.com/ProductDetail/603-RC0805FR-0710KL) |
 | Joystick      | 1        | [link](https://www.mouser.com/ProductDetail/688-RKJXV122400R) |
-| 5P 1.25mm Header | 1        | [link](https://www.aliexpress.com/item/32968483467.html) |
 | 1.6x4mm screw | 6        | [link](https://www.aliexpress.com/item/32968483467.html) |
 | 15cm 5P cable | 1        | [link](https://www.aliexpress.com/item/32979005732.html) |
+| 5P 1.25mm Header | 1        | [link](https://www.aliexpress.com/item/1005003115054198.html) |
 
-https://www.aliexpress.com/item/32968483467.html?spm=a2g0o.order_list.0.0.21ef1802mHU3e1
-
+If using the example link for the header, select the 'DIP' variety (they mean thru-hole, but oh well).
 
 ## Assembly
 
